@@ -28,7 +28,7 @@ yarn
 
 - All changes and Updates are done via `main.js` file
 - Front-end File on `public` Folder `index.html`
-- Get Live Match Score URLS from `espncricinfo.com` XML Feed - `http://static.cricinfo.com/rss/livescores.xml`
+- Get Live Match Score URLS from `espncricinfo.com` XML Feed - `http://static.cricinfo.com/rss/livescores.xml` - you need the Update Live Match URL - <https://github.com/mskian/livescore/blob/master/main.js#L4> Don't Remove the `https://cors-anywhere.herokuapp.com` it helps us to Bypass the Cors Blocking - <https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9>
 - After the changes Generate bundle file
 
 ```bash
