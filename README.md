@@ -16,7 +16,7 @@ A Simple Scrape Method to Fetch the Live Cricket Score from espncricinfo.com
 
 - Download and Upload the `public` Folder on your server or localhost
 
-> Still Many Features are Missing I will Updating one by one based on user Suggestion -  if you have any ideas you PR' are always welcome.
+> Still Many Features are Missing I will Updating one by one based on user Suggestion -  if you have any ideas you PR's are always welcome.
 
 ## Development
 
