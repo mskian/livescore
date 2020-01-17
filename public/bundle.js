@@ -14,7 +14,7 @@ axios({
             const $ = cheerio.load(html);
             let score = $('meta[name="title"]').attr('content');
             console.log(score);
-            document.getElementById('response').innerHTML = '<p class="notification is-warning has-text-weight-bold">' + score + '</p>';
+            document.getElementById('response').innerHTML = '<div class="notification score is-warning has-text-weight-bold">' + score + '</div>';
         } else {
             console.log(response.status);
         };

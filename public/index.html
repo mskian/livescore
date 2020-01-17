@@ -61,17 +61,7 @@ a:hover, a:focus, a:active {
 .content a {
     color: #ffffff;
 }
-.container,
-p,
-button,
-input,
-textarea,
-.control,
-.label,
-.notice {
-    text-align: center;
-    margin: 0 auto;
-}
+
 .notice {
     max-width: 25rem;
 }
@@ -108,7 +98,7 @@ button {
    -webkit-font-smoothing: antialiased !important;
    -moz-font-smoothing: antialiased !important;
    text-rendering: optimizelegibility !important;
-	width: 25rem !important;
+	width: 15rem !important;
 	min-height: 3rem;
 }
 .is-horizontal-center {
@@ -276,6 +266,17 @@ p {
    -moz-font-smoothing: antialiased !important;
    text-rendering: optimizelegibility !important;
 }
+.score {
+    letter-spacing: .03em;
+    word-wrap: break-word;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
 footer p {
     font-size: 15px;
     font-weight: 500;
@@ -291,9 +292,13 @@ footer p {
 <div class="container">
 <div class="column is-half is-offset-one-quarter">
 <br>
-<h1 class="title">Hello Cricket 🏏</h1>
-<p>Live Cricket Score 🔥</p><br>
+<h1 class="title has-text-centered">Hello Cricket 🏏</h1>
+<p class="has-text-centered">Live Cricket Score 🔥</p><br>
 <div id="response"></div>
+<br>
+<div class="buttons is-centered">
+<button class="button is-link pwa-button" onClick="window.location.reload();">Refresh Score</button>
+</div>
 </div>
 </div>
 </section>
@@ -305,17 +310,22 @@ footer p {
 <div class="columns is-centered">
 <div class="column is-half">
 <h3 class="has-text-centered">For Education Purpose only ✍</h3><br>
-<p>Fetch live score from ESPNcricinfo.com</p>
-<p>using Web scraping method Node.JS + Axios + Cheerio.JS</p>
-<p>📦 Bundle the Package using browserify.JS</p><br>
-<p><b>Get the Live Match Score URLS from espncricinfo.com XML Feed <br> http://static.cricinfo.com/rss/livescores.xml </b></p><br>
-<p>We are not Responsible for the any future damage use at your own Risk</p>
-<p>if you want to use this on Production Please Refer the ESPNcricinfo Terms and use.</p>
+<p>➡ Fetch live score from ESPNcricinfo.com</p>
+<p>➡ using Web scraping method Build Using Node.JS + Axios + Cheerio.JS</p>
+<p>➡ 📦 Bundle the Package using browserify.JS</p>
+<p><b>➡ Get the Live Match Score URLS from espncricinfo.com XML Feed - http://static.cricinfo.com/rss/livescores.xml </b></p>
+<p>➡ We are not Responsible for the any future damage use at your own Risk</p>
+<p>➡ if you want to use this on Production Please Refer the ESPNcricinfo Terms and use.</p>
+<br>
+<div class="buttons is-centered">
+<a target="_blank" rel="nofollow noopener" href="https://github.com/mskian/livescore" class="button is-link">Source Code</a>
+</div>
 </div>
 </div>
 </div>
 </section>
 
+<hr>
 <br>
     
 <script src="bundle.js"></script>
