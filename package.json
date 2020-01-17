@@ -1,0 +1,17 @@
+{
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "description": "Get Live Cricket Score",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Santhosh Veer",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cheerio": "^1.0.0-rc.3",
+    "ora": "^4.0.3"
+  }
+}
