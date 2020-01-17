@@ -1,10 +1,10 @@
 # Live Score
 
-A Simple Scrape Method to Fetch the Live Score from espncricinfo.com
+A Simple Scrape Method to Fetch the Live Cricket Score from espncricinfo.com
 
 ## For Education Purpose only ✍
 
-> We are not Responsible for the any future damage use at your own Risk -if you want to use this on Production Read the ESPNcricinfo Terms and use.
+> We are not Responsible for any future damage use at your own risk.if you want to use this on Production Read the ESPNcricinfo Terms and use.
 
 ## Methods Used
 
