@@ -27,7 +27,7 @@ yarn
 ```
 
 - all changes and Updates are done via `main.js` file
-- After the changes Generate the bundle file
+- After the changes Generate bundle file
 
 ```bash
 browserify main.js -o ./public/bundle.js
