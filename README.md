@@ -10,7 +10,7 @@ A Simple Scrape Method to Fetch the Live Cricket Score from espncricinfo.com
 
 - Cheerio.js for scrape the content
 - axios - HTTP Client
-- Bundle the Package using browserify.JS `npm install -g browserify`
+- Bundle the Package using browserify.JS
 
 ## usage
 
@@ -26,11 +26,19 @@ A Simple Scrape Method to Fetch the Live Cricket Score from espncricinfo.com
 yarn
 ```
 
-- all changes and Updates are done via `main.js` file
+- All changes and Updates are done via `main.js` file
+- Front-end File on `public` Folder `index.html`
+- Get Live Match Score URLS from `espncricinfo.com` XML Feed - `http://static.cricinfo.com/rss/livescores.xml`
 - After the changes Generate bundle file
 
 ```bash
-browserify main.js -o ./public/bundle.js
+yarn build
+```
+
+- Test the site on local server
+
+```bash
+yarn live
 ```
 
 ## LICENSE
