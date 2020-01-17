@@ -18,8 +18,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"axios": "^0.19.1",
-		"cheerio": "^1.0.0-rc.3",
-		"ora": "^4.0.3"
+		"cheerio": "^1.0.0-rc.3"
 	},
 	"devDependencies": {
 		"browserify": "^16.5.0"
