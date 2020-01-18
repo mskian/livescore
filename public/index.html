@@ -221,6 +221,18 @@ pre code {
    -moz-font-smoothing: antialiased !important;
    text-rendering: optimizelegibility !important;
 }
+.user-form li {
+    line-height: 20px;
+    margin-bottom: 21px;
+    word-wrap: break-word;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #221f1f;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
+}
 .user-form input {
     display: flex;
     flex-grow: 0.3;
@@ -321,6 +333,10 @@ footer p {
 <div class="buttons is-centered">
 <button class="button is-success pwa-button" onClick="window.location.reload(true);">Refresh Score</button>
 </div>
+<br>
+<p class="has-text-danger has-text-weight-medium" style="font-size:14px; margin:15px;">
+Bookmark our site link - we will Update the live match details every day. Score May delay due to Scraping Content is Not Updated Frequently Just Refresh the page 2 to 3 times to Get the Live Score.
+</p>
 </div>
 </div>
 </div>
@@ -333,12 +349,14 @@ footer p {
 <div class="card-content content user-form login">
 <h3 class="has-text-centered">For Education Purpose only ✍</h3>
 <hr>
-<p>➡ Fetch live score from ESPNcricinfo.com</p>
-<p>➡ using Web scraping method Build Using Node.JS + Axios + Cheerio.JS</p>
-<p>➡ 📦 Bundle the Package using browserify.JS</p>
-<p><b>➡ Get the Live Match Score URLS from espncricinfo.com XML Feed - http://static.cricinfo.com/rss/livescores.xml </b></p>
-<p>➡ We are not Responsible for the any future damage use at your own Risk</p>
-<p>➡ if you want to use this on Production Please Refer the ESPNcricinfo Terms and use.</p>
+<ul class="has-text-weight-medium">
+<li>Fetch live score from ESPNcricinfo.com</li>
+<li>using Web scraping method Build Using Node.JS + Axios + Cheerio.JS</li>
+<li>📦 Bundle the Package using browserify.JS</li>
+<li>Get the Live Match Score URLS from espncricinfo.com XML Feed - http://static.cricinfo.com/rss/livescores.xml</li>
+<li>We are not Responsible for the any future damage use at your own Risk</li>
+<li>if you want to use this on Production Please Refer the ESPNcricinfo Terms and use.</li>
+</ul>
 <br>
 <div class="buttons is-centered">
 <a target="_blank" rel="nofollow noopener" href="https://github.com/mskian/livescore" class="button is-link">Source Code</a>
