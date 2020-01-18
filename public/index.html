@@ -6,11 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#ffffff">
-<link rel="shortcut icon" href="Icon-48.png"/>
+<link rel="shortcut icon" href="icons/Icon-48.png"/>
 <link rel="canonical" href="https://livecri.netlify.com/" />
 
 <title>Live Cricket Score 🏏</title>
 <meta name="description" content="Free online - Live Cricket Score." />
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Live Score">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+<meta name="apple-mobile-web-app-title" content="Live Score">
+
+<link rel="apple-touch-icon" sizes="48x48" href="icons/Icon-48.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/Icon-72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="icons/Icon-96.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/Icon-144.png">
+<link rel="apple-touch-icon" sizes="192x192" href="icons/Icon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="icons/Icon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="icons/Icon-512.png">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
@@ -30,7 +45,7 @@
   body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: #DAE5ED;
     color: rgba(0, 0, 0, 0.6);
     font-weight: 400;
     line-height: 1.618;
@@ -277,11 +292,16 @@ p {
    -moz-font-smoothing: antialiased !important;
    text-rendering: optimizelegibility !important;
 }
+hr {
+    background-color: #00b894;
+}
 footer p {
     font-size: 15px;
     font-weight: 500;
 }
 </style>
+
+<link rel="manifest" href="manifest.json">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -291,25 +311,27 @@ footer p {
 <section class="section">
 <div class="container">
 <div class="column is-half is-offset-one-quarter">
-<br>
+<div class="card-content content user-form login">
 <h1 class="title has-text-centered">Hello Cricket 🏏</h1>
+<hr>
 <p class="has-text-centered">Live Cricket Score 🔥</p><br>
 <div id="response"></div>
 <br>
 <div class="buttons is-centered">
-<button class="button is-link pwa-button" onClick="window.location.reload();">Refresh Score</button>
+<button class="button is-link pwa-button" onClick="window.location.reload(true);">Refresh Score</button>
+</div>
 </div>
 </div>
 </div>
 </section>
 
-<hr>
-
 <section class="section">
 <div class="container">
 <div class="columns is-centered">
 <div class="column is-half">
-<h3 class="has-text-centered">For Education Purpose only ✍</h3><br>
+<div class="card-content content user-form login">
+<h3 class="has-text-centered">For Education Purpose only ✍</h3>
+<hr>
 <p>➡ Fetch live score from ESPNcricinfo.com</p>
 <p>➡ using Web scraping method Build Using Node.JS + Axios + Cheerio.JS</p>
 <p>➡ 📦 Bundle the Package using browserify.JS</p>
@@ -323,11 +345,23 @@ footer p {
 </div>
 </div>
 </div>
+</div>
 </section>
 
-<hr>
 <br>
-    
+
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+</script>
+
 <script src="bundle.js"></script>
 
 </body>
