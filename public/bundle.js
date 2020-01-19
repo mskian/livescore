@@ -2,7 +2,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/8368/game/1204679/australia-under-19s-vs-west-indies-under-19s-5th-match-group-b-icc-under-19-world-cup-2019-20';
+const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/19304/game/1187029/india-vs-australia-3rd-odi-australia-tour-of-india-2019-20';
 
 axios({
         method: 'get',
