@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/19304/game/1187029/india-vs-australia-3rd-odi-australia-tour-of-india-2019-20';
+const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/19322/game/1187677/new-zealand-vs-india-1st-t20i-india-in-new-zealand-2019-20';
 
 axios({
         method: 'get',
