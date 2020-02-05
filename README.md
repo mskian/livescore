@@ -1,7 +1,5 @@
 # Live Score
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/adf5bd69-3409-4a8e-8e10-ca71c91d8806/deploy-status)](https://app.netlify.com/sites/livecri/deploys)
-
 A Simple Scrape Method to Fetch the Live Cricket Score from espncricinfo.com
 
 ## For Education Purpose only ✍
