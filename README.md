@@ -1,5 +1,7 @@
 # Live Score
 
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784277953-173703ec38dbb8847658812d) ![David](https://img.shields.io/david/mskian/livescore)  
+
 A Simple Scrape Method to Fetch the Live Cricket Score from espncricinfo.com
 
 ## For Education Purpose only ✍
