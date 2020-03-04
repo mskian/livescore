@@ -1,5 +1,5 @@
 {
-	"name": "web-scraping",
+	"name": "live-score",
 	"version": "1.0.0",
 	"description": "Get Live Cricket Score",
 	"main": "main.js",
@@ -12,7 +12,8 @@
 		"url": "git+https://github.com/mskian/livescore.git"
 	},
 	"keywords": [
-		"cricket"
+		"cricket",
+		"web-scraping"
 	],
 	"author": "Santhosh Veer",
 	"license": "MIT",
