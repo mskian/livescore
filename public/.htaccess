@@ -1,10 +1,31 @@
 ## HTTP Security Headers ##
 header always set x-xss-protection "1; mode=block"
 header always set x-frame-options "SAMEORIGIN"
-Header always set Strict-Transport-Security "max-age=63072000; includeSubdomains; preload"
+Header always set Strict-Transport-Security "max-age=63072000"
 Header always set X-Content-Type-Options "nosniff"
 
 Options -Indexes
+
+Options -MultiViews
+
+# Force UTF-8 for certain file formats.
+<IfModule mod_mime.c>
+    AddCharset utf-8 .atom .css .js .json .rss .vtt .webapp .xml
+    AddType "text/html; charset=UTF-8" html
+</IfModule>
+
+<Files sw.js >
+Header unset ETag
+Header set Cache-Control "no-cache"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</Files>
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+</IfModule>
 
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
@@ -54,10 +75,3 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 2 days"
 </IfModule>
 ## EXPIRES HEADER CACHING ##
-
-<Files sw.js >
-Header unset ETag
-Header set Cache-Control "no-cache"
-Header set Pragma "no-cache"
-Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
-</Files>

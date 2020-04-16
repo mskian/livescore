@@ -1,11 +1,12 @@
 {
 	"name": "live-score",
 	"version": "1.0.0",
-	"description": "Get Live Cricket Score",
+	"description": "Get Live Cricket Score.",
 	"main": "main.js",
 	"scripts": {
-		"build": "browserify main.js -o ./public/bundle.js",
-		"live": "php -S localhost:3030 -t public/"
+		"build": "browserify main.js -o ./public/bundle.js | babel ./public/bundle.js -o ./public/bundle.min.js",
+		"live": " http-server ./public",
+		"minify": "babel ./public/bundle.js -o ./public/bundle.min.js"
 	},
 	"repository": {
 		"type": "git",
@@ -13,15 +14,25 @@
 	},
 	"keywords": [
 		"cricket",
-		"web-scraping"
+		"web-scraping",
+		"live score"
 	],
 	"author": "Santhosh Veer",
 	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mskian/livescore/issues"
+	},
+	"homepage": "https://github.com/mskian/livescore/#readme",
 	"dependencies": {
 		"axios": "^0.19.2",
 		"cheerio": "^1.0.0-rc.3"
 	},
 	"devDependencies": {
-		"browserify": "^16.5.1"
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-minify": "^0.5.1",
+		"browserify": "^16.5.1",
+		"http-server": "^0.12.1"
 	}
 }
