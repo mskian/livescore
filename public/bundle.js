@@ -4,10 +4,18 @@ const cheerio = require('cheerio');
 
 const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/8634/game/1173070/australia-women-vs-india-women-final-icc-womens-t20-world-cup-2019-20';
 
+const appNotice = $('.notice');
+appNotice.html('<p>Fetching the Live Score 📦 ...</p>');
+
 axios({
         method: 'get',
         url: liveurl,
     })
+    .then(
+        setTimeout(() => {
+            appNotice.empty();
+        }, 800),
+    )
     .then(function(response) {
         if (response.status == '200') {
             const html = response.data;

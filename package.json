@@ -5,7 +5,7 @@
 	"main": "main.js",
 	"scripts": {
 		"build": "browserify main.js -o ./public/bundle.js | babel ./public/bundle.js -o ./public/bundle.min.js",
-		"live": " http-server ./public",
+		"live": "http-server ./public --p 3001",
 		"minify": "babel ./public/bundle.js -o ./public/bundle.min.js"
 	},
 	"repository": {
