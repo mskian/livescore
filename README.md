@@ -16,6 +16,15 @@
 - Babel - Minify the Bundled JS
 - Node `http-server` - Test the Site Locally
 
+## CORS API 🍔
+
+By default `espncricinfo` Blocking the Cross-origin Request so we use `https://cors-anywhere.herokuapp.com` to Bypass the CORS Blocking but `cors-anywhere Limited the Call request yes we can call only 200 request Hour (`200 Request for 1 Hour`) if you want More then Self-host the cors-anywhere API Script it's Open Source For More Refer here - <https://github.com/Rob--W/cors-anywhere#demo-server>
+
+## To Do List 🔖
+
+- [ ] JSON API
+- [ ] Live Auto Refresh
+
 ## usage 📦
 
 - Download and Upload the `public` Folder on your server or localhost

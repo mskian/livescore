@@ -2,11 +2,14 @@
 	"name": "live-score",
 	"version": "1.0.0",
 	"description": "Get Live Cricket Score.",
+	"private": true,
 	"main": "main.js",
 	"scripts": {
 		"build": "browserify main.js -o ./public/bundle.js | babel ./public/bundle.js -o ./public/bundle.min.js",
 		"live": "http-server ./public --p 3001",
-		"minify": "babel ./public/bundle.js -o ./public/bundle.min.js"
+		"minify": "babel ./public/bundle.js -o ./public/bundle.min.js",
+		"lint": "eslint . --ext .js --cache",
+		"lintfix": "eslint --fix main.js"
 	},
 	"repository": {
 		"type": "git",
@@ -33,6 +36,7 @@
 		"babel-preset-es2015": "^6.24.1",
 		"babel-preset-minify": "^0.5.1",
 		"browserify": "^16.5.1",
+		"eslint": "^6.8.0",
 		"http-server": "^0.12.1"
 	}
 }
