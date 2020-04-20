@@ -29,7 +29,13 @@ axios({
     .catch(function(error) {
         if (!error.response) {
             console.log('Enter a Valid URL');
-        } else {
+        } else if (error.response.status == 429) {
             console.log(error.response.data);
+            document.getElementById("response").innerHTML = '<div class="notification is-danger">'+ error.response.data +'</div>';
+        } else if (error.response.status == 403) {
+            console.log(error.response.data);
+            document.getElementById("response").innerHTML = '<div class="notification is-danger">'+ error.response.data +'</div>';
+        } else {
+            console.log('Hmm Something Went Wrong or HTTP Status Code is Missing');
         }
     });
