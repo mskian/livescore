@@ -20,7 +20,7 @@ axios({
         if (response.status == '200') {
             const html = response.data;
             const $ = cheerio.load(html);
-            let score = $('meta[name="title"]').attr('content');
+            let score = $('meta[property="og:title"]').attr('content');
             console.log(score);
             document.getElementById('response').innerHTML = '<div class="notification score is-link has-text-weight-bold">' + score + '</div>';
         } else {
