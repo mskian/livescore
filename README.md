@@ -54,6 +54,12 @@ yarn build
 yarn live
 ```
 
+- Minify the JS Build
+
+```sh
+yarn minify
+```
+
 ## To Do List 🔖
 
 - [ ] Live Auto Refresh
