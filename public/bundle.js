@@ -2,7 +2,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/8634/game/1173070/australia-women-vs-india-women-final-icc-womens-t20-world-cup-2019-20';
+const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/19497/game/1225247/england-vs-west-indies-1st-test-west-indies-in-england-2020';
 
 // eslint-disable-next-line no-undef
 const appNotice = $('.notice');
