@@ -2,11 +2,11 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/19497/game/1225247/england-vs-west-indies-1st-test-west-indies-in-england-2020';
+const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/19495/game/1198241/england-vs-pakistan-1st-test-england-v-pakistan-2020';
 
 // eslint-disable-next-line no-undef
 const appNotice = $('.notice');
-appNotice.html('<p>Fetching the Live Score 📦 ...</p>');
+appNotice.html('<p class="has-text-centered">Fetching the Live Score 📦</p>');
 
 axios({
     method: 'get',
