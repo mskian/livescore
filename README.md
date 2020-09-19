@@ -68,7 +68,7 @@ yarn minify
 
 ## To Do List 🔖
 
-- [ ] Live Auto Refresh
+- [x] Live Auto Refresh - Auto Refresh the Score Every 1 Minutes - <https://github.com/mskian/livescore/blob/ed1b26a1eba4ae8250ed55dc4c08c9fe7a13be15/main.js#L50>
 
 ## For Education and Learning Purpose only ✍
 
