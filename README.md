@@ -4,10 +4,6 @@
 
 > A Simple Scrape Method to Fetch the Live Cricket Score from espncricinfo.com
 
-## For Education Purpose only ✍
-
-> We are not Responsible for any future damage use at your own risk.if you want to use this on Production Read the ESPNcricinfo Terms and use.
-
 ## Methods Used ⚙
 
 - Cheerio.js for scrape the content
@@ -20,11 +16,21 @@
 
 By default `espncricinfo` Blocking the Cross-origin Request so we use `https://cors-anywhere.herokuapp.com` to Bypass the CORS Blocking but cors-anywhere Limited the Call request yes we can call only 200 request Hour (`200 Request for 1 Hour`) if you want More then Self-host the cors-anywhere API Script it's Open Source For More Refer here - <https://github.com/Rob--W/cors-anywhere#demo-server>
 
+➡ PHP API Method - <https://github.com/mskian/score-update>
+➡ Telegram Score Updates on Channel - <https://github.com/mskian/score-update>
+
 ## usage 📦
 
-- Download and Upload the `public` Folder on your server or localhost
+- Clone or Download and Upload the `public` Folder on your server or localhost
 
-> Still Many Features are Missing I will Updating one by one based on user Suggestion -  if you have any ideas your PR's are always welcome.
+```sh
+git clone https://github.com/mskian/livescore.git
+cd livscore # Update JS File
+## Open Public folder to update the static content
+cd public
+```
+
+> Still Many Features are Missing I will Updating one by one based on user Suggestion -  if you have any ideas your PR's are welcome.
 
 ## Development 🛠
 
@@ -63,6 +69,10 @@ yarn minify
 ## To Do List 🔖
 
 - [ ] Live Auto Refresh
+
+## For Education and Learning Purpose only ✍
+
+> We are not Responsible for any future damage use at your own risk.if you want to use this on Production Read the ESPNcricinfo Terms and use.
 
 ## LICENSE ☑
 
