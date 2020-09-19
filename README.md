@@ -16,7 +16,7 @@
 
 By default `espncricinfo` Blocking the Cross-origin Request so we use `https://cors-anywhere.herokuapp.com` to Bypass the CORS Blocking but cors-anywhere Limited the Call request yes we can call only 200 request Hour (`200 Request for 1 Hour`) if you want More then Self-host the cors-anywhere API Script it's Open Source For More Refer here - <https://github.com/Rob--W/cors-anywhere#demo-server>
 
-➡ PHP API Method - <https://github.com/mskian/score-update>  
+➡ PHP API Method - <https://github.com/mskian/iplscore>  
 ➡ Telegram Score Updates on Channel - <https://github.com/mskian/score-update>
 
 ## usage 📦
