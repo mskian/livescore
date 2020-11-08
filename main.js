@@ -2,7 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 // Update the Match URL Don't remove this line - https://cors-anywhere.herokuapp.com/
-const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/8048/game/1216532/delhi-capitals-vs-sunrisers-hyderabad-11th-match-indian-premier-league-2020-21';
+const liveurl = 'https://cors-anywhere.herokuapp.com/https://www.espncricinfo.com/series/8048/game/1237180/delhi-capitals-vs-sunrisers-hyderabad-qualifier-2-indian-premier-league-2020-21';
 
 function Getscore() {
 // eslint-disable-next-line no-undef
